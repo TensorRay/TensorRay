@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  
+  <!-- Tensor visualizer -->
+  <Type Name="EDX::DeepLearning::Tensor&lt;*&gt;">
+    <DisplayString Condition="mParams.mLinearSize == 0">Empty</DisplayString>
+    <DisplayString Condition="mParams.mLinearSize &lt; 0">Invalid</DisplayString>
+    <DisplayString Condition="mParams.mLinearSize &gt;= 0">Shape={mParams.mShape}</DisplayString>
+    <Expand>
+      <ArrayItems Condition="mParams.mLinearSize &gt;= 0">
+        <Size>mParams.mLinearSize</Size>
+        <ValuePointer>($T1*)mpHostData._Ptr</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+
+</AutoVisualizer>
