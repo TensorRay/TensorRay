@@ -5,7 +5,7 @@ It is based on the theoretical framework introduced in the paper titled [Path-Sp
 
 ## Compiling and using TensorRay
 
-Please see the [documentation](https://dummy.url) for details on how to compile and use TensorRay.
+Please see the [documentation](https://tensorray.readthedocs.io/en/latest/) for details on how to compile and use TensorRay.
 
 ## License
 This code is licensed under BSD-3-Clause license. Please see `LICENSE.txt` for details.
